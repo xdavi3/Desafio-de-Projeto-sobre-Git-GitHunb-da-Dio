@@ -1,0 +1,174 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled0.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyMNBazHugwUv8Bg7s/TDmgC",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/xdavi3/Desafio-de-Projeto-sobre-Git-GitHunb-da-Dio/blob/main/Programa%C3%A7%C3%A3o%20de%20Computadores%3A%20Python%20(1)\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "CONCEITOS DE LÓGICA DE PROGRAMAÇÃO:\n",
+        "➢ Variável: inteiro (int), real (float), string(str) ou Lógico (bool),\n",
+        "➢ Entrada de dados: input,\n",
+        "➢ Saída de dados: print,\n",
+        "➢ Operadores: Aritméticos, Relacionais e Lógicos e\n",
+        "➢ Estruturas de Seleção: Simples: if, Composta: if – else e Encadeada: if – elif – else."
+      ],
+      "metadata": {
+        "id": "BMrLOrsfdD_-"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "1) Escreva um algoritmo em Python para cada item a seguir:\n",
+        "\n",
+        "a) Calcular e exibir a hipotenusa (𝐴) de um triângulo retângulo de catetos 𝐵 e 𝐶, sabendo que:\n",
+        "𝐴= √𝐵2+ 𝐶2"
+      ],
+      "metadata": {
+        "id": "oDOYGhTNdSbO"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from math import hypot\n",
+        "co = float (input('Comprimento do cateto oposto: ')) \n",
+        "ca = float (input('Comprimento do cateto adjacente: '))\n",
+        "hi = hypot(co, ca)\n",
+        "print('A hipotenusa vai medir {:.2f}'.format(hi))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dXp1s5kfdW1t",
+        "outputId": "517aee02-c7ae-4b26-dc03-a8f809a467be"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Comprimento do cateto oposto: 8\n",
+            "Comprimento do cateto adjacente: 3\n",
+            "A hipotenusa vai medir 8.54\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "b) Calcular e exibir a área de um quadrado de lado (L). Área = L2."
+      ],
+      "metadata": {
+        "id": "x5VLfCLvifiE"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def area (larg, comp):\n",
+        "    a = larg * comp\n",
+        "    print(f'A area de um terreno {larg}x{comp} e de {a}m2.')\n",
+        "\n",
+        "\n",
+        "# Programa principal\n",
+        "print('Controle de Terrenos')\n",
+        "print('-' * 20)\n",
+        "l = float(input('LARGURA (m): '))\n",
+        "c = float(input('COMPRIMENTO (m): '))\n",
+        "area(l, c)\n"
+      ],
+      "metadata": {
+        "id": "78xHliogi9tl"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "d) Calcular e exibir a área e o comprimento de um círculo de Raio (R), sabendo que, Área = π * R2 e Comprimento = 2 * π * R."
+      ],
+      "metadata": {
+        "id": "KR2ODHVtpnyf"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import math \n",
+        "\n",
+        "raio = float(input(\"Informa o raio do circulo: \"))\n",
+        "area = math.pi * (raio ** 2)\n",
+        "print(\"A area e de: \", area)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SQBSJgthprQw",
+        "outputId": "b12593f3-bfad-4901-e34d-2cfca19d911c"
+      },
+      "execution_count": 30,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Informa o raio do circulo: 25\n",
+            "A area e de:  1963.4954084936207\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "e) Calcular e exibir o IMC (Índice de Massa Corpórea) de uma pessoa de altura (H) em metros e massa (M) em quilogramas, sabendo que IMC = M / H2."
+      ],
+      "metadata": {
+        "id": "k2Lz8lLjrWZz"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "ORIdjMwmraf3"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
